@@ -1,0 +1,530 @@
+#: import Factory kivy.factory.Factory
+Menu:
+
+<Menu>:
+    canvas.before:
+        Color:
+            rgba: (31/255, 2/255, 31/255, 1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    orientation: "vertical"
+
+    ScrollView:
+        Choices:
+            size_hint: 1, None
+            height: self.minimum_height
+
+            Button:
+                text: "Burger"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (253/255, 241/255, 41/255, 1) if self.state == "down" else (251/255, 123/255, 0, 1)
+                background_normal: 'burger_normal.png'
+                background_down: 'burger_down.png'
+
+
+            Button:
+                text: "Pasta"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (.957, .267, .18, 1) if self.state == "down" else (127/255, 30/255, 4/255, 1)
+                background_normal: 'pasta_normal.png'
+                background_down: 'pasta_down.png'
+
+            Button:
+                text: "Pizza"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (253/255, 241/255, 41/255, 1) if self.state == "down" else (251/255, 123/255, 0, 1)
+                background_normal: 'pizza_normal.png'
+                background_down: 'pizza_down.png'
+
+            Button:
+                text: "Poke Bowl"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (.957, .267, .18, 1) if self.state == "down" else (127/255, 30/255, 4/255, 1)
+                background_normal: 'pokebowl_normal.png'
+                background_down: 'pokebowl_down.png'
+
+            Button:
+                text: "Fried Chicken"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (253/255, 241/255, 41/255, 1) if self.state == "down" else (251/255, 123/255, 0, 1)
+                background_normal: 'friedchicken_normal.png'
+                background_down: 'friedchicken_down.png'
+
+            Button:
+                text: "Salad"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (.957, .267, .18, 1) if self.state == "down" else (127/255, 30/255, 4/255, 1)
+                background_normal: 'salad_normal.png'
+                background_down: 'salad_down.png'
+
+            Button:
+                text: "Sushi"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (253/255, 241/255, 41/255, 1) if self.state == "down" else (251/255, 123/255, 0, 1)
+                background_normal: 'sushi_normal.png'
+                background_down: 'sushi_down.png'
+
+            Button:
+                text: "Ramen"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (.957, .267, .18, 1) if self.state == "down" else (127/255, 30/255, 4/255, 1)
+                background_normal: 'ramen_normal.png'
+                background_down: 'ramen_down.png'
+
+            Button:
+                text: "Taco"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (253/255, 241/255, 41/255, 1) if self.state == "down" else (251/255, 123/255, 0, 1)
+                background_normal: 'taco_normal.png'
+                background_down: 'taco_down.png'
+
+            Button:
+                text: "Ice Cream"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (.957, .267, .18, 1) if self.state == "down" else (127/255, 30/255, 4/255, 1)
+                background_normal: 'icecream_normal.png'
+                background_down: 'icecream_down.png'
+
+            Button:
+                text: "Steak"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (253/255, 241/255, 41/255, 1) if self.state == "down" else (251/255, 123/255, 0, 1)
+                background_normal: 'steak_normal.png'
+                background_down: 'steak_down.png'
+
+            Button:
+                text: "Curry"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (.957, .267, .18, 1) if self.state == "down" else (127/255, 30/255, 4/255, 1)
+                background_normal: 'curry_normal.png'
+                background_down: 'curry_down.png'
+
+
+            Button:
+                text: "Hot Dog"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (253/255, 241/255, 41/255, 1) if self.state == "down" else (251/255, 123/255, 0, 1)
+                background_normal: 'hotdog_normal.png'
+                background_down: 'hotdog_down.png'
+
+            Button:
+                text: "Doughnut"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (.957, .267, .18, 1) if self.state == "down" else (127/255, 30/255, 4/255, 1)
+                background_normal: 'doughnut_normal.png'
+                background_down: 'doughnut_down.png'
+
+            Button:
+                text: "Salmon"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (253/255, 241/255, 41/255, 1) if self.state == "down" else (251/255, 123/255, 0, 1)
+                background_normal: 'salmon_normal.png'
+                background_down: 'salmon_down.png'
+
+            Button:
+                text: "Tempura"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (.957, .267, .18, 1) if self.state == "down" else (127/255, 30/255, 4/255, 1)
+                background_normal: 'tempura_normal.png'
+                background_down: 'tempura_down.png'
+
+            Button:
+                text: "Lobster"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (253/255, 241/255, 41/255, 1) if self.state == "down" else (251/255, 123/255, 0, 1)
+                background_normal: 'lobster_normal.png'
+                background_down: 'lobster_down.png'
+
+            Button:
+                text: "Stew"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (.957, .267, .18, 1) if self.state == "down" else (127/255, 30/255, 4/255, 1)
+                background_normal: 'stew_normal.png'
+                background_down: 'stew_down.png'
+
+            Button:
+                text: "Fondue"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (253/255, 241/255, 41/255, 1) if self.state == "down" else (251/255, 123/255, 0, 1)
+                background_normal: 'fondue_normal.png'
+                background_down: 'fondue_down.png'
+
+
+            Button:
+                text: "Pancake"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (.957, .267, .18, 1) if self.state == "down" else (127/255, 30/255, 4/255, 1)
+                background_normal: 'pancake_normal.png'
+                background_down: 'pancake_down.png'
+
+            Button:
+                text: "Chinese"
+                size_hint: None, None
+                size: "150dp", "150dp"
+                on_press: root.on_food_press(self)
+                font_size: 20
+                bold: True
+                italic: True
+                outline_color: (0,0,0)
+                outline_width: 5
+                color: (253/255, 241/255, 41/255, 1) if self.state == "down" else (251/255, 123/255, 0, 1)
+                background_normal: 'chinese_normal.png'
+                background_down: 'chinese_down.png'
+    
+    GridLayout:
+        cols: 3
+        Label:
+            id : c1
+            text: root.choice1
+            font_size: 20
+            bold: True
+            italic: True
+            outline_color: (0,0,0)
+            outline_width: 5
+            color: root.dark_yellow
+            canvas.before:
+                Color:
+                    rgba: root.b1
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [15]
+
+        Label:
+            id: c2
+            text: root.choice2
+            font_size: 20
+            bold: True
+            italic: True
+            outline_color: (0,0,0)
+            outline_width: 5
+            color: root.dark_red
+            canvas.before:
+                Color:
+                    rgba: root.b2
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [15]
+
+        Label:
+            id: c3
+            text: root.choice3
+            font_size: 20
+            bold: True
+            italic: True
+            outline_color: (0,0,0)
+            outline_width: 5
+            color: root.dark_yellow
+            canvas.before:
+                Color:
+                    rgba: root.b3
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [15]
+
+        Label:
+            id: c4
+            text: root.choice4
+            font_size: 20
+            bold: True
+            italic: True
+            outline_color: (0,0,0)
+            outline_width: 5
+            color: root.dark_red
+            canvas.before:
+                Color:
+                    rgba: root.b4
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [15]
+            
+        BoxLayout:
+            spacing: "20dp"
+            padding: "10dp"
+            orientation: "vertical"
+
+            RoundedButton2:
+                text: "Choose"
+                color: (0,0,0,1)
+                font_size: 20
+                bold: True
+                italic: True
+                on_release: root.rotate()
+
+            RoundedButton1:
+                text: "Clear"
+                color: (0,0,0,1)
+                font_size: 20
+                bold: True
+                italic: True
+                on_release: root.clear_all()
+
+        Label:
+            id: c5
+            text: root.choice5
+            font_size: 20
+            bold: True
+            italic: True
+            outline_color: (0,0,0)
+            outline_width: 5
+            color: root.dark_red
+            canvas.before:
+                Color:
+                    rgba: root.b5
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [15]
+
+        Label:
+            id: c6
+            text: root.choice6
+            font_size: 20
+            bold: True
+            italic: True
+            outline_color: (0,0,0)
+            outline_width: 5
+            color: root.dark_yellow
+            canvas.before:
+                Color:
+                    rgba: root.b6
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [15]
+
+        Label:
+            id: c7
+            text: root.choice7
+            font_size: 20
+            bold: True
+            italic: True
+            outline_color: (0,0,0)
+            outline_width: 5
+            color: root.dark_red
+            canvas.before:
+                Color:
+                    rgba: root.b7
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [15]
+
+        Label:
+            id: c8
+            text: root.choice8
+            font_size: 20
+            bold: True
+            italic: True
+            outline_color: (0,0,0)
+            outline_width: 5
+            color: root.dark_yellow
+            canvas.before:
+                Color:
+                    rgba: root.b8
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [15]
+
+<RoundedButton1@Button>
+    background_color: (0,0,0,0)
+    background_normal: ''
+    canvas.before:
+        Color:
+            rgba:(3/255, 192/255, 193/255, 1) if self.state == 'normal' else (0, 127/255, 128/255,1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [25]
+
+<RoundedButton2@Button>
+    background_color: (0,0,0,0)
+    background_normal: ''
+    canvas.before:
+        Color:
+            rgba:(.957, .267, .18, 1) if self.state == 'normal' else (127/255, 30/255, 4/255, 1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [25]
+
+<result>:
+    canvas.before:
+        Color:
+            rgba: (31/255, 2/255, 31/255, 1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        padding: "5dp"
+
+        Label:  
+            text: root.choice
+            font_size: 20 
+            color: (253/255, 241/255, 41/255, 1)
+            bold: True
+            italic: True
+            outline_color: (0,0,0)
+            outline_width: 5
+
+        RoundedButton1:
+            text: "Close"
+            color: (0,0,0,1)
+            font_size: 20
+            bold: True
+            italic: True
+            size_hint: 0.5, 0.3
+            pos_hint: {"center_x": 0.5, "center_y": 0.6}
+            on_release: root.parent.parent.parent.dismiss()
+
+
+        
