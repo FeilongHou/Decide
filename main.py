@@ -44,10 +44,10 @@ class Menu(BoxLayout):
     max_iter = random.randrange(20,60)
     iteration = 0
 
-    select = SoundLoader.load("select.mp3")
-    spin = SoundLoader.load("spin.mp3")
+    select = SoundLoader.load("sound/select.mp3")
+    spin = SoundLoader.load("sound/spin.mp3")
     spin.volume = 0.3
-    result = SoundLoader.load("result.mp3")
+    result = SoundLoader.load("sound/result.mp3")
 
     def rotate(self):
         self.spin.play()
